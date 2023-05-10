@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Ryan</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <u1 class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> Giới thiệu
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Kĩ năng
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Kinh nghiệm
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Liên hệ
+                            </a>
+                        </li>
+                    </u1>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://dribbble.com/" target="blank" class="home__social-icon">
+                                <i class="uil uil-dribbble"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://github.com/RyanStark99" target="blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x='0' y='0'  xlink:href="assets/img/perfil.png"/>
+                                </g>
+                            </svg>
+                            
+                        </div>
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, Mình là Ryan</h1>
+                            <h11 class="home__title2">Tên thật của mình là Hoàn nhưng cứ gọi mình là Ryan là được rồi.</h11>
+                            <h3 class="home__subtitle">Mình là một Portfolio web developer</h3>
+                            <p class="home__description">Mình mới học và tự làm một số front-end website, chăm học hỏi tìm tòi cái mới, có nhiều kiến thức về công nghệ, PC, smartphone, nghe hiểu ngoại ngữ khá tốt. </p>
+                            <a href="#contact" class="button button--flex">
+                                Liên hệ mình ở đây <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__scroll">
+                            <a href="#about" class="home__scroll-button button--flex">
+                                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                                <span class="home__scroll-name">Cuộn xuống</span>
+                                <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">Giới thiệu</h2>
+                <span class="section__subtitle">My introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">Có kiến thức về công nghệ, pc hi-end, laptop. Có kiến
+                            thức tốt về phần cứng. Sử dụng thành thạo các phần mềm làm việc.</p>
+                        
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">2+</span>
+                                <span class="about__info-name">Năm <br> kinh nghiệm</span>
+                            </div>
+                        </div>
+
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">6+</span>
+                                <span class="about__info-name">Sản phẩm <br> hoàn thành</span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/CV.pdf" class="button button--flex">
+                                Download CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Kĩ năng</h2>
+                <span class="section__subtitle">Trình độ kĩ thuật của tôi</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILLS 0 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-desktop skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">PC</h1>
+                                    <span class="skills__subtitle">6 năm</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skill__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Hardware</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__hw"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skill__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Software</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sw"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content">
+                            <div class="skills__header">
+                                <i class="uil uil-archway skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Engineer architect</h1>
+                                    <span class="skills__subtitle">6 năm</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skill__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Autocad</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__cad"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skill__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">ADS Civil</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ads"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skill__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Sketchup</h3>
+                                        <span class="skills__number">40%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sk"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__open">
+                           <div class="skills__header">
+                               <i class="uil uil-adobe skills__icon"></i>
+
+                               <div>
+                                   <h1 class="skills__title">Designer</h1>
+                                   <span class="skills__subtitle">4 năm</span>
+                               </div>
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                           </div>
+
+                           <div class="skills__list grid">
+                               <div class="skill__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Photoshop</h3>
+                                       <span class="skills__number">60%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__pts"></span>
+                                   </div>
+                               </div>
+
+                               <div class="skill__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Premiere</h3>
+                                       <span class="skills__number">50%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__pre"></span>
+                                   </div>
+                               </div>
+
+                               <div class="skill__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Illustrator</h3>
+                                       <span class="skills__number">30%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__ill"></span>
+                                   </div>
+                               </div>
+
+                               <div class="skill__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">After effect</h3>
+                                       <span class="skills__number">50%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__ae"></span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+
+                    <div>
+                        <!--==================== SKILLS 3 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Front-end developer</h1>
+                                    <span class="skills__subtitle">Khoảng 1 tháng</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skill__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skill__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__css"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skill__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JavaScrip</h3>
+                                        <span class="skills__number">10%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skill__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__react"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--==================== SKILLS 4 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-bag-alt skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Office</h1>
+                                    <span class="skills__subtitle">6 năm</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skill__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Word</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__word"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skill__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Power Point</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__pp"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skill__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Excel</h3>
+                                        <span class="skills__number">40%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ex"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+                <h2 class="section__title">Trình độ chuyên môn</h2>
+                <span class="section__subtitle">Học tập và làm việc</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Học tập
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Làm việc
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Trung Học Phổ Thông</h3>
+                                    <span class="qualification__subtitle">THPT Hồng Quang/ Hải Dương</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2014 - 2017
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Kĩ Sư Cầu Đường</h3>
+                                    <span class="qualification__subtitle">Đại Học Kiến Trúc Hà Nội</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2017 - 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Front-End Developer</h3>
+                                    <span class="qualification__subtitle">FPT Aptech</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2023 - 2024
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <div class="qualification__content " data-content id="work">
+                            
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">                               
+                                <div>
+                                    <h3 class="qualification__title">Xử Lí Dữ Liệu Hình Ảnh</h3>
+                                    <span class="qualification__subtitle">Aimmo - Việt Nam</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2019 - 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                
+                                <div>
+                                    <span class="qualification__rounder"></span>   
+                                    <span class="qualification__line"></span>                                
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Xử Lí Dữ Liệu Hình Ảnh</h3>
+                                    <span class="qualification__subtitle">Infiniq - Việt Nam</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022 - 2023
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">                               
+                                <div>
+                                    <h3 class="qualification__title">Front-End Developer</h3>
+                                    <span class="qualification__subtitle">Apple - Việt Nam</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2023 - Now
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Kinh nghiệm</h2>
+                <span class="section__subtitle">Tôi có thể làm những gì ?</span>
+
+                <div class="services__container container grid">
+                    <!--==================== SERVICES 1 ====================-->
+                    <div class="services__content">
+                        <i class="uil uil-desktop services__icon"></i>
+                        <h3 class="services__title">PC <br> Engineer</h3>
+    
+                        <span class="button button--flex button--small button--link services__button">
+                            Xem thêm
+                            <i class="uil-arrow-right button__icon"></i>
+                        </span>
+        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Kĩ Thuật Viên <br> Máy Tính</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+        
+                                <u1 class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Xây dựng những cấu hình PC.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Kiểm tra phần cứng máy tính.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Cài Win dạo.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Sửa lỗi máy tính, cài đặt phần mềm.</p>
+                                    </li>
+                                </u1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICES 2 ====================-->
+                    <div class="services__content">
+                        <i class="uil uil-archway services__icon"></i>
+                        <h3 class="services__title">Structal <br> Engineer</h3>
+    
+                        <span class="button button--flex button--small button--link services__button">
+                            Xem thêm
+                            <i class="uil-arrow-right button__icon"></i>
+                        </span>
+        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Kĩ Sư <br> Công Trình</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+        
+                                <u1 class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Thiết kế đường giao thông.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Thiết kế hạng mục giao thông, san nền,kè đá, thoát nước thải trong các khu quy hoạch.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Thiết kế đường ống và dây điện trong các khu hạ tầng kỹ thuật.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Thiết kế đường giao thông trong các khu quy hoạch.</p>
+                                    </li>
+                                </u1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICES 3 ====================-->
+                    <div class="services__content">
+                        <i class="uil uil-adobe-alt services__icon"></i>
+                        <h3 class="services__title">Freelancer <br> Designer</h3>
+    
+                        <span class="button button--flex button--small button--link services__button">
+                            Xem thêm
+                            <i class="uil-arrow-right button__icon"></i>
+                        </span>
+        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Designer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+        
+                                <u1 class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Chỉnh sửa ảnh căn bản.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Thiết kế banner, quảng cáo.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Edit video cơ bản.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Thiết kế logo.</p>
+                                    </li>
+                                </u1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICES 4 ====================-->
+                    <div class="services__content">
+                        <i class="uil uil-image-search services__icon"></i>
+                        <h3 class="services__title">Data <br> Service</h3>
+    
+                        <span class="button button--flex button--small button--link services__button">
+                            Xem thêm
+                            <i class="uil-arrow-right button__icon"></i>
+                        </span>
+        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Xử Lí Dữ Liệu <br> Hình Ảnh Đầu Vào AI</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+        
+                                <u1 class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Integration-OD.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Integration-Segment.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Indus.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>3D Cuboid.</p>
+                                    </li>
+                                </u1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICES 5 ====================-->
+                    <div class="services__content">
+                        <i class="uil uil-transaction services__icon"></i>
+                        <h3 class="services__title">Website <br> Developer</h3>
+    
+                        <span class="button button--flex button--small button--link services__button">
+                            Xem thêm
+                            <i class="uil-arrow-right button__icon"></i>
+                        </span>
+        
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Thiết kế <br> Website</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+        
+                                <u1 class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Thiết kế Front-End cho website.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Thiết kế web portfolio cá nhân, tổ chức.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Thiết kế giao diện, UX/UI cho các trang web.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Thiết kế giao diện cho app điện thoại.</p>
+                                    </li>
+                                </u1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                
+            </section>
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
+
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+         
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
