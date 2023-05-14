@@ -88,13 +88,13 @@ body.dark-theme{
 
 .change-theme{
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: var(--first-color);
   margin-right: var(--mb-1-5);
   cursor: pointer;
 }
 
 .change-theme:hover{
-  color: var(--first-color);
+  color: var(--first-color-lighter);
 }
 /*==================== BASE ====================*/
 * {
@@ -197,6 +197,10 @@ img {
 .nav__logo:hover{
   color: var(--first-color-lighter);
   transform: scale(1.1);
+}
+
+.nav__icon{
+  padding-bottom: 0.8rem;
 }
 
 .nav__toggle{
@@ -355,7 +359,8 @@ img {
 }
 
 .home__scroll-mouse{
-  font-size: 2rem;
+  font-size: 1rem;
+  padding-right: 0.5rem;
 }
 
 .home__scroll-name{
@@ -366,7 +371,8 @@ img {
 }
 
 .home__scroll-arrow{
-  font-size: 1.25rem;
+  font-size: 1rem;
+  padding-left: 0.5rem;
 }
 
 /*==================== BUTTONS ====================*/
@@ -384,7 +390,7 @@ img {
 }
 
 .button__icon{
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-left: var(--mb-0-5);
   transition: .3s;
 }
@@ -427,6 +433,13 @@ img {
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
+}
+
+.about__icon{
+  font-size: 1rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+  transform: rotate(90deg);
 }
 
 .about__description{
@@ -473,14 +486,14 @@ img {
   cursor: pointer;
 }
 
-.skills__icon,
-.skills__arrow{
-  font-size: 2.2rem;
+.skills__icon{
+  font-size: 2rem;
   color: var(--first-color);
 }
 
 .skills__icon{
   margin-right: var(--mb-0-75);
+  padding-right: 0.5rem; 
 }
 
 .skills__title{
@@ -493,6 +506,8 @@ img {
 }
 
 .skills__arrow{
+  color: var(--first-color); 
+  font-size: 1.2rem;
   margin-left: auto;
   transition: .5s;
 }
@@ -577,8 +592,8 @@ img {
 }
 
 .qualification__icon{
-  font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
+  font-size: 1.2rem;
+  margin-right: var(--mb-0-5); 
 }
 
 .qualification__data{
@@ -878,7 +893,7 @@ img {
 }
 
 .contact__icon{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--first-color);
   margin-right: var(--mb-0-75);
 }
@@ -901,6 +916,7 @@ img {
 }
 
 .contact__label{
+  margin-top: 0.2rem;
   font-size: 1.2rem;
   color: var(--first-color);
   margin-right: 1rem;
@@ -982,7 +998,7 @@ img {
   right: 1rem; bottom: -20%;
   background-color: var(--first-color);
   opacity: .8;
-  padding: 0 .3rem;
+  padding: .3rem .3rem 0;
   border-radius: .5rem;
   z-index: var(--z-tooltip);
   transition: .3s;
@@ -1140,11 +1156,13 @@ img {
 
   .nav{
     height: calc(var(--header-height) + 1.5rem);
-    column-gap: 1rem;
+    column-gap: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .nav__icon, .nav__close, .nav__toggle{
-    display: none;
+    display: none; 
   }
 
   .nav__list{
@@ -1227,10 +1245,6 @@ img {
 
   .services__modal-content{
     width: 80%;
-  }
-
-  .portfolio__img{
-    width: 320px;
   }
 
   .portfolio__content{

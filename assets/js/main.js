@@ -194,7 +194,7 @@ window.addEventListener('scroll', scrollUp)
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
-const iconTheme = 'uil-sun'
+const iconTheme = 'fa-circle'
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -202,14 +202,15 @@ const selectedIcon = localStorage.getItem('selected-icon')
 
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'fa-moon' : 'fa-circle'
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+  themeButton.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove'](iconTheme)
 }
+
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
@@ -250,8 +251,8 @@ const sr = ScrollReveal({
 //     reset: true
 });
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__header, .services__container, .project__bg, .contact__information, .contact__form, .project__img,',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__data, .skills__list, .qualification__tabs, .qualification__rounder, .qualification__line, .services__icon, .project__data, .contact__title, .contact__subtitle, .contact__inputs, .swiper-button-next, .swiper-button-prev',{delay: 200}); 
-sr.reveal('.home__social-icon, .home__scroll, .about__buttons, .home__button, .qualification__title, .services__title, .services__button, .contact__button, .swiper-pagination',{ interval: 100}); 
-sr.reveal('.skills__data, .work__img, .qualification__subtitle, .qualification__calendar',{interval: 50});
+sr.reveal('.skills__subtitle, .services__container, .project__bg, .contact__information, .contact__form, .contact__title, .project__img,',{}); 
+sr.reveal('.home__img, .about__subtitle,.about__img, .about__data, .skills__header, .services__icon, .qualification__tabs, .project__data, .swiper-wrapper, .contact__subtitle, .contact__inputs',{delay: 200}); 
+sr.reveal('.home__social-icon,.home__data, .home__scroll, .about__buttons, .skills__list, .qualification__container, .home__button, .services__title, .services__button, .contact__button, .swiper-button-next, .swiper-button-prev, .swiper-pagination',{ interval: 100}); 
+sr.reveal('.skills__data, .work__img',{interval: 50});
 
