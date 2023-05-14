@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 37;
+    --hue-color: 30; 
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -156,7 +156,7 @@ img {
 
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
+  max-width: 900px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -174,6 +174,21 @@ img {
   z-index: var(--z-fixed);
   background-color: var(--body-color);
 }
+
+/*==================== Language ====================*/
+.switch-VN{
+  color: var(--first-color);
+  font-size: var(--font-medium);
+  font-weight: var(--font-semi-bold);
+}
+
+.switch-EN{
+  color: var(--text-color-light);
+  font-size: var(--font-medium);
+  font-weight: var(--font-semi-bold);
+  margin-left: 0.5rem; 
+}
+
 
 /*==================== NAV ====================*/
 .nav{
@@ -251,7 +266,7 @@ img {
 
 .nav__close{
   position: absolute;
-  right: 1.3rem; bottom: .5rem;
+  right: 1.3rem; bottom: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--first-color);
@@ -284,7 +299,7 @@ img {
 
 .home__content{
   grid-template-columns: .5fr 3fr;
-  padding-top: 3.5rem;
+  padding-top: 2.5rem; 
   align-items: center;
 }
 
@@ -1183,7 +1198,7 @@ img {
   }
 
   .home__content{
-    padding-top: 5.5rem;
+    padding-top: .5rem;
     column-gap: 2rem;
   }
 
@@ -1282,7 +1297,7 @@ img {
 
   .footer__links{
     flex-direction: row;
-    column-gap: 0.5rem;
+    column-gap: 2rem;
   }
 
   .footer__socials{
