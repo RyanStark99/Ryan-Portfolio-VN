@@ -61,7 +61,7 @@
                     <i class="uil uil-moon change-theme" id="theme-button"></i>
 
                     <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
+                        <i class="uil uil-list-ui-alt"></i>
                     </div>
                 </div>
             </nav>
@@ -124,9 +124,9 @@
             </section>
 
             <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
+            <section class="about__section section" id="about">
                 <h2 class="section__title">Giới thiệu</h2>
-                <span class="section__subtitle">My introduction</span>
+                <span class="section__subtitle">Sơ lược cá nhân</span>
 
                 <div class="about__container container grid">
                     <img src="assets/img/about.jpg" alt="" class="about__img">
@@ -207,7 +207,7 @@
 
                     <div>
                         <!--==================== SKILLS 1 ====================-->
-                        <div class="skills__content skills__open"> 
+                        <div class="skills__content skills__close"> 
                             <div class="skills__header">
                                 <i class="uil uil-archway skills__icon"></i>
 
@@ -254,7 +254,7 @@
                     
                     <div>
                         <!--==================== SKILLS 2 ====================-->
-                        <div class="skills__content skills__open">
+                        <div class="skills__content skills__close">
                            <div class="skills__header">
                                <i class="uil uil-adobe skills__icon"></i>
 
@@ -311,7 +311,7 @@
 
                     <div>
                         <!--==================== SKILLS 3 ====================-->
-                        <div class="skills__content skills__open">
+                        <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-brackets-curly skills__icon"></i>
 
@@ -368,7 +368,7 @@
 
                     <div>
                         <!--==================== SKILLS 4 ====================-->
-                        <div class="skills__content skills__open">
+                        <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-bag-alt skills__icon"></i>
 
@@ -771,10 +771,10 @@
             </section>
 
             <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio"> 
+            <section class="portfolio section" id="portfolio">
                 <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Most recent work</span>
-
+                <span class="section__subtitle">Dự án gần đây</span> 
+    
                 <div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1 ====================-->
@@ -797,7 +797,7 @@
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Portfolio Website</h3>
-                                <p class="portfolio__description">Thời đại ngày nay việc sử dụng CV viết tay không còn được phổ biến, hay hiện đại hơn đã có những trang web hỗ trợ làm CV online với nhiều mẫu mã có sẵn, nhưng CV chỉ có thể tóm tắt ngắn gọn rất khó để thể hiện cá tính bản thân.<br>Portfolio bắt mắt sẽ gây ấn tượng với nhà tuyển dụng và nâng cao khả năng thành công trong vòng hồ sơ ban đầu.</p>
+                                <p class="portfolio__description">Thời đại ngày nay việc sử dụng CV viết tay không còn được phổ biến, nhưng CV chỉ có thể tóm tắt ngắn gọn rất khó để thể hiện cá tính bản thân.<br>Portfolio bắt mắt sẽ gây ấn tượng với nhà tuyển dụng và nâng cao khả năng thành công trong vòng hồ sơ ban đầu.</p>
 
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     Demo<i class="uil uil-arrow-right button__icon"></i>
@@ -817,9 +817,18 @@
                                     Demo<i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
-                        </div>  
+                        </div> 
                     </div>
-                </div> 
+                    <!-- Add Arrow -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
 
             <!--==================== PROJECT IN MIND ====================-->
@@ -956,32 +965,33 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form onsubmit="sendEmail(); reset(); return false;" class="contact__form grid">
                         <div class="contact__inputs grid">
+                            <h3>Để lại thông tin</h3>
                             <div class="contact__content">
                                 <span class="uil uil-user contact__label"></span>
-                                <input type="text" class="contact__input" placeholder="Tên">
+                                <input type="text" id="name" class="contact__input" placeholder="Tên">
                             </div>
             
                             <div class="contact__content">
                                 <span class="uil uil-envelope contact__label"></span>
-                                <input type="email" class="contact__input" placeholder="Email">
+                                <input type="email" id="email" class="contact__input" placeholder="Email">
                             </div>
             
                             <div class="contact__content">
                                 <span class="uil uil-mobile-android contact__label"></span>
-                                <input type="number" class="contact__input" placeholder="Số điện thoại">
+                                <input type="number" id="phone" class="contact__input" placeholder="Số điện thoại">
                             </div>
 
                             <div class="contact__content">
                                 <span class="uil uil-file-alt contact__label"></span>
-                                <textarea name="" id="" cols="0" rows="7" class="contact__input" placeholder="Để lại lời nhắn ..."></textarea>
+                                <textarea name="" id="message" cols="0" rows="7" class="contact__input" placeholder="Để lại lời nhắn ..."></textarea>
                             </div>
 
                             <div>
-                                <a href="#" class="contact__button button button--flex">Liên hệ
+                                <button type="submit" class="contact__button button button--flex">Gửi
                                     <i class="uil uil-message project__icon button__icon"></i>
-                                </a>
+                                </button>
                             </div>
                         </div>
                         
@@ -1032,10 +1042,16 @@
             <i class="uil uil-arrow-up scrollup-icon"></i>
         </a>
 
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
         <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/swiper-bundle.js"></script>
         
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+
+        <!--==================== EMAIL JS ====================-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
 </html>

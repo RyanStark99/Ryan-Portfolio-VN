@@ -66,6 +66,7 @@ tabs.forEach(tab =>{
     })
 })
 
+
 /*==================== SERVICES MODAL ====================*/
 const   modalViews = document.querySelectorAll('.services__modal'),
         modalBtns = document.querySelectorAll('.services__button'),
@@ -87,6 +88,11 @@ modalCloses.forEach((modalClose) =>{
         })
     })
 })
+
+
+
+
+
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper(".portfolio__container", {
     cssMode: true, loop: true,
@@ -100,6 +106,9 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
     },
     mousewheel: true,
 });
+
+
+
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonal = new Swiper(".testimonial__container", {
     cssMode: true, loop: true,
@@ -118,6 +127,9 @@ let swiperTestimonal = new Swiper(".testimonial__container", {
         }
     }
 });
+
+
+
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
@@ -139,6 +151,11 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+
+
+
+
+
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 function scrollHeader(){
     const nav = document.getElementById('header')
@@ -146,6 +163,10 @@ function scrollHeader(){
     if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+
+
+
 
 /*==================== SHOW SCROLL TOP ====================*/ 
 function scrollTop(){
@@ -155,6 +176,10 @@ function scrollTop(){
 }
 window.addEventListener('scroll', scrollTop)
 
+
+
+
+
 /*==================== SHOW SCROLL UP ====================*/ 
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
@@ -162,6 +187,9 @@ function scrollUp(){
     if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
+
+
 
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
@@ -192,3 +220,38 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+/*==================== SEND EMAIL ====================*/
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "portfolio.email.ryan@gmail.com",
+        Password : "roydevil99",
+        To : 'ryanstark2209@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "A có email mới kìa !",
+        Body : "Người gửi: " + document.getElementById("name").value
+        + "<br> Email: " + document.getElementById("email").value
+        + "<br> Số điện thoại: " + document.getElementById("phone").value
+        + "<br> Nội dung: " + document.getElementById("message").value
+    }).then(
+      message => alert("Gửi tin nhắn thành công !")
+    );
+}
+
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 100,
+//     reset: true
+});
+
+sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__header, .services__container, .project__bg, .contact__information, .contact__form, .project__img,',{}); 
+sr.reveal('.home__img, .about__subtitle, .about__data, .skills__list, .qualification__tabs, .qualification__rounder, .qualification__line, .services__icon, .project__data, .contact__title, .contact__subtitle, .contact__inputs, .swiper-button-next, .swiper-button-prev',{delay: 200}); 
+sr.reveal('.home__social-icon, .home__scroll, .about__buttons, .home__button, .qualification__title, .services__title, .services__button, .contact__button, .swiper-pagination',{ interval: 100}); 
+sr.reveal('.skills__data, .work__img, .qualification__subtitle, .qualification__calendar',{interval: 50});
+
