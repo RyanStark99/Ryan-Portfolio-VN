@@ -739,6 +739,7 @@ img {
 .services__modal-icon{
   color: var(--first-color);
   margin-right: var(--mb-0-5);
+  margin-top: 0.3rem; 
 }
 /* Active Modal */
 .active-modal{
