@@ -202,6 +202,8 @@ img {
 .nav__logo{
   color: var(--first-color);
   font-weight: var(--font-medium);
+  width: 100px; 
+  cursor: pointer;
 } 
 
 .nav__toggle{
@@ -574,6 +576,10 @@ img {
 .skills__word{width: 70%;}
 .skills__pp{width: 90%;}
 .skills__ex{width: 40%;}
+.skills__en{width: 80%;}
+.skills__ja{width: 20%;}
+.skills__ko{width: 0%;}
+.skills__cn{width: 0%;}
 
 .skills__close .skills__list{
   height: 0;
@@ -1337,3 +1343,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1279px){
+  .nav__link{
+    font-size: 1.1rem;
+  }
+
+  .nav__logo{
+    font-size: 1.1rem; 
+  }
+
+}
