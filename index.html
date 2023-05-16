@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -889,8 +889,8 @@
                     <div class="swiper-button-prev">
                         <i class="fas fa-angle-left swiper-portfolio-icon"></i>
                     </div>
-                    <!-- Add Pagination <div class="swiper-pagination"></div>-->
-                    
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
 
@@ -1028,38 +1028,47 @@
                         </div>
                     </div>
 
-                    <form onsubmit="sendEmail(); reset(); return false;" class="contact__form grid">
+                    <form action="https://formsubmit.co/ryanstark2209@gmail.com" method="POST" enctype="multipart/form-data" class="contact__form grid">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="A có mail mới kìa !">
                         <div class="contact__inputs grid">
                             <h3>Để lại thông tin</h3>
                             <div class="contact__content">
                                 <span class="fas fa-user contact__label"></span>
-                                <input type="text" id="name" class="contact__input" placeholder="Tên">
+                                <input type="text" name="Tên" required class="contact__input" placeholder="Tên">
                             </div>
             
                             <div class="contact__content">
                                 <span class="fas fa-envelope contact__label"></span>
-                                <input type="email" id="email" class="contact__input" placeholder="Email">
+                                <input type="email" name="Email" required class="contact__input" placeholder="Email">
                             </div>
             
                             <div class="contact__content">
                                 <span class="fas fa-mobile-screen-button contact__label"></span>
-                                <input type="number" id="phone" class="contact__input" placeholder="Số điện thoại">
+                                <input type="number" name="Số điện thoại" required class="contact__input" placeholder="Số điện thoại">
                             </div>
 
                             <div class="contact__content">
                                 <span class="fas fa-file-alt contact__label"></span>
-                                <textarea name="" id="message" cols="0" rows="7" class="contact__input" placeholder="Để lại lời nhắn ..."></textarea>
+                                <textarea name="Nội dung" required cols="0" rows="7" class="contact__input" placeholder="Để lại lời nhắn ..."></textarea>
                             </div>
 
-                            <div>
-                                <button type="submit" class="contact__button button button--flex">Gửi
-                                    <i class="fab fa-telegram-plane project__icon button__icon"></i>
-                                </button>
+                            <div class="contact__picture">
+                                <span class="fas fa-images contact__label"></span>
+                                <h11></h11> 
+                                <input type="file" name="Ảnh" accept="image/png, image/jpeg">
                             </div>
                         </div>
-                        
+
+                        <div>
+                            <button type="submit" class="contact__button button button--flex">Gửi
+                                <i class="fab fa-telegram-plane project__icon button__icon"></i>
+                            </button>
+                        </div>
                     </form>
                 </div>
+
             </section>
         </main>
 

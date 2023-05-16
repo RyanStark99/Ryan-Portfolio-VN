@@ -768,6 +768,10 @@ img {
   visibility: visible;
 }
 
+
+
+
+
 /*==================== PORTFOLIO ====================*/
 .portfolio__container{
   overflow: initial;
@@ -815,7 +819,7 @@ img {
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullet{
-  bottom: -2.5rem;
+  bottom: -2.5rem; 
 }
 
 .swiper-pagination-bullet-active{
@@ -937,6 +941,17 @@ img {
   padding: .75rem 1rem .25rem;
 }
 
+.contact__picture{
+  display: flex;
+  background-color: var(--input-color);
+  border-radius: .5rem;
+  padding: .75rem 1rem .75rem;
+}
+
+.contact__picture h11{
+  margin-right: 0.5rem;
+}
+
 .contact__label{
   margin-top: 0.2rem;
   font-size: 1.2rem;
@@ -958,6 +973,10 @@ img {
 .contact__button:hover .button__icon{
   transform: translateX(.25rem);
 }
+
+/*==================== POPUP ====================*/
+
+
 
 /*==================== FOOTER ====================*/
 .footer{
@@ -1039,6 +1058,9 @@ img {
 .show-scroll{
   bottom: 4rem;
 }
+
+/* Active Popup */
+
 
 /*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar{
@@ -1322,6 +1344,10 @@ img {
     padding: 0;
   }
 
+  .nav__link{
+    font-size: 1rem;
+  }
+
   .home__blob{
     width: 400px;
   }
@@ -1343,13 +1369,3 @@ img {
   }
 }
 
-@media screen and (min-width: 1279px){
-  .nav__link{
-    font-size: 1.1rem;
-  }
-
-  .nav__logo{
-    font-size: 1.1rem; 
-  }
-
-}
